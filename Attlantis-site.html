@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nação Digital Attlantis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif}
+
+body{
+    background:#0b1724;
+    color:#e6eef6;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    background:#0f2235;
+    border-bottom:1px solid #1c3a57;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:1.6rem;
+    color:#7fd4ff;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:1rem;
+}
+
+.login-btn{
+    padding:.5rem 1rem;
+    border:1px solid #4aa3d6;
+    border-radius:6px;
+    color:#4aa3d6;
+}
+
+.login-btn:hover{
+    background:#4aa3d6;
+    color:#001018;
+}
+
+.cadastro-btn{
+    padding:.5rem 1rem;
+    background:#2c82c9;
+    border-radius:6px;
+    color:#fff;
+}
+
+.cadastro-btn:hover{
+    background:#46a2e6;
+}
+
+/* BANNER */
+.banner{
+    margin:2rem;
+    padding:4rem 2rem;
+    border-radius:12px;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+               url('https://via.placeholder.com/1200x500') center/cover;
+    text-align:center;
+}
+
+.banner h2{
+    font-family:'Orbitron';
+    font-size:2.6rem;
+    margin-bottom:1rem;
+    color:#9edbff;
+}
+
+.banner p{
+    margin-bottom:2rem;
+    color:#c8d9e8;
+}
+
+.cta-btn{
+    padding:.9rem 1.6rem;
+    background:#2c82c9;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.cta-btn:hover{
+    background:#4aa3d6;
+}
+
+/* ACESSO RÁPIDO */
+.quick-access{
+    display:flex;
+    gap:1rem;
+    margin:2rem;
+    flex-wrap:wrap;
+}
+
+.quick-btn{
+    flex:1;
+    min-width:220px;
+    background:#13293d;
+    padding:1.5rem;
+    border-radius:10px;
+    text-align:center;
+    text-decoration:none;
+    color:#dbe7f3;
+    border:1px solid #1f3d5a;
+}
+
+.quick-btn span{
+    font-size:2.2rem;
+    display:block;
+    margin-bottom:.5rem;
+}
+
+.quick-btn:hover{
+    background:#1c3d5a;
+}
+
+/* MENU PRINCIPAL */
+.main-nav{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:1rem;
+    margin:2rem;
+}
+
+.nav-btn{
+    background:#13293d;
+    padding:1.4rem;
+    border-radius:10px;
+    text-decoration:none;
+    color:#dbe7f3;
+    text-align:center;
+    border:1px solid #1f3d5a;
+}
+
+.nav-btn span{
+    font-size:1.8rem;
+    display:block;
+    margin-bottom:.5rem;
+}
+
+.nav-btn:hover{
+    background:#1c3d5a;
+}
+
+.highlight{
+    background:#2c82c9;
+}
+
+/* CONSTITUIÇÃO */
+.constitution{
+    margin:2rem;
+    padding:2rem;
+    background:#13293d;
+    border-radius:10px;
+    border:1px solid #1f3d5a;
+}
+
+.constitution h3{
+    margin-bottom:1rem;
+    color:#9edbff;
+}
+
+/* PARCEIROS */
+.parceiros{
+    margin-top:3rem;
+    text-align:center;
+}
+
+.parceiros h3{
+    font-family:'Orbitron';
+    color:#9edbff;
+}
+
+.parceiros-logos{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-top:1rem;
+}
+
+.parceiro-logo{
+    background:#13293d;
+    padding:1rem 2rem;
+    border-radius:8px;
+    border:1px solid #1f3d5a;
+}
+
+/* FOOTER */
+footer{
+    margin-top:3rem;
+    background:#0f2235;
+    padding:2rem;
+    text-align:center;
+    color:#9fb6c9;
+}
+
+@media(max-width:768px){
+    header{flex-direction:column;gap:1rem}
+    .banner h2{font-size:2rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Digital Attlantis</h1>
+<nav>
+<a href="login.html" class="login-btn">Login</a>
+<a href="cadastro.html" class="cadastro-btn">Cadastrar</a>
+</nav>
+</header>
+
+<main>
+
+<section class="banner">
+<h2>O Futuro da Humanidade Nasce no Oceano</h2>
+<p>Construa a primeira nação digital voltada à civilização oceânica.</p>
+<a href="exercito/" class="cta-btn">Tornar-se Cidadão</a>
+</section>
+
+<section class="quick-access">
+<a href="documentos/" class="quick-btn">
+<span>📘</span>ID Digital
+</a>
+
+<a href="banco/" class="quick-btn">
+<span>💳</span>Banco Attlantis
+</a>
+
+<a href="exercito/" class="quick-btn">
+<span>🛰️</span>Força de Defesa
+</a>
+</section>
+
+<nav class="main-nav">
+<a href="governo/" class="nav-btn"><span>🏛️</span>Governo</a>
+<a href="constituicao/" class="nav-btn"><span>📜</span>Constituição</a>
+<a href="projetos/" class="nav-btn"><span>⚙️</span>Projetos</a>
+<a href="servicos/" class="nav-btn"><span>🤝</span>Serviços</a>
+<a href="comunidade/" class="nav-btn"><span>🌐</span>Comunidade</a>
+<a href="territorio/" class="nav-btn"><span>🌊</span>Território</a>
+<a href="seguranca/" class="nav-btn"><span>🛡️</span>Segurança</a>
+<a href="economia/" class="nav-btn highlight"><span>📈</span>Economia</a>
+<a href="educacao/" class="nav-btn"><span>🎓</span>Educação</a>
+<a href="infraestrutura/" class="nav-btn"><span>🏗️</span>Infraestrutura</a>
+<a href="relacoes/" class="nav-btn"><span>🤝</span>Relações</a>
+<a href="tecnologia/" class="nav-btn"><span>🚀</span>Tecnologia</a>
+
+</nav>
+
+<section class="constitution">
+<h3>Fundamentos de Attlantis</h3>
+<p>
+Attlantis é uma nação digital fundada para unir tecnologia,
+cooperação e exploração oceânica, criando uma nova fronteira
+para a civilização humana.
+</p>
+</section>
+
+</main>
+
+<footer>
+<div class="parceiros">
+<h3>Parceiros Estratégicos</h3>
+<div class="parceiros-logos">
+<div class="parceiro-logo">OceanTech</div>
+<div class="parceiro-logo">DeepSea Labs</div>
+<div class="parceiro-logo">AquaEnergy</div>
+</div>
+</div>
+
+<p>© 2026 — Nação Digital Attlantis</p>
+</footer>
+
+</body>
+</html>
